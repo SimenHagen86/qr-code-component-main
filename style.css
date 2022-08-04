@@ -1,0 +1,59 @@
+/* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(212, 45%, 89%);
+  --lightblue: hsl(220, 15%, 55%);
+  --dark: hsl(218, 44%, 22%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray);
+  font-family: 'Outfit', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card {
+  max-width: 375px;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.card__title {
+  color: var(--dark);
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 1em;
+  font-weight: 700;
+}
+
+.card__text {
+  color: var(--lightblue);
+  font-size: 0.9375rem;
+  margin-bottom: 2em;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 1em;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+}
